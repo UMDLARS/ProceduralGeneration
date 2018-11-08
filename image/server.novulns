@@ -1,0 +1,2 @@
+# This is all we need for a working nginx server (hosting nginx welcome page)
+FROM nginx

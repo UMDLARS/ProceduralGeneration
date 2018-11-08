@@ -1,0 +1,5 @@
+# This is all we need for a working nginx server (hosting nginx welcome page)
+FROM nginx
+
+RUN  apt update \
+	&& apt install -y telnetd telnet
