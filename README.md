@@ -1,5 +1,11 @@
 # Procedural Content Generation for Capture The Flag competitions (PCGCTF)
 
+- [Procedural Content Generation for Capture The Flag competitions (PCGCTF)](#procedural-content-generation-for-capture-the-flag-competitions-pcgctf)
+    - [Topology Generator](#topology-generator)
+    - [Vulnerability Injector](#vulnerability-injector)
+    - [Image creator](#image-creator)
+    - [Setup](#setup)
+
 This project has three core components. These are the topology generator, the vulnerability injector, and the image creator. 
 
 ## Topology Generator
@@ -10,7 +16,7 @@ in the topology and edges are physical links between machines.
 
 The generator can be run like this: 
 
-`TODO: example usage`
+`python3 topology_generator.py > data.json`
 
 and generates JSON in this form:
 
@@ -33,6 +39,12 @@ This component is responsible for generating a path of vulnerabilities through
 a topology such that there is a path from node `start` to node `end`. It will
 also assign vulnerability types to nodes on the path from `start` to `end` such
 that the path can be traversed. 
+
+It can be run like this:  
+
+`python3 injector.py`
+
+And generates JSON in this form: 
 
 ```
 {
